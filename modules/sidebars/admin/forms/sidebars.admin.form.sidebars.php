@@ -79,11 +79,11 @@ $this->fields=array(
 		'tag' => 'select',
 		'options' => array(
 			array(
-				'value' => $data->phrases['sidebars']['left'],
+				'value' => 'left',
 				'text'  => $data->phrases['sidebars']['left']
 			),
 			array(
-				'value' => $data->phrases['sidebars']['right'],
+				'value' => 'right',
 				'text'  => $data->phrases['sidebars']['right']
 			)
 		)
