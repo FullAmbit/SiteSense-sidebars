@@ -26,7 +26,7 @@ function sidebars_settings() {
 	return array(
 		'name'      => 'sidebars',
 		'shortName' => 'sidebars',
-		'version'   => '1.0'
+		'version'   => '1.0.1'
 	);
 }
 function sidebars_install($db,$drop=false,$firstInstall=false,$lang='en_us') {
