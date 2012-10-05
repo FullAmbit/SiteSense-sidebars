@@ -50,7 +50,7 @@ function admin_sidebarsBuild($data, $db) {
 				common_loadPlugin($data, 'bbcode');
 				$data->output['sidebarForm']->sendArray[':parsedContent'] = $data->plugins['bbcode']->parse($data->output['sidebarForm']->sendArray[':rawContent']);
 			} else {
-				$data->output['sidebarForm']->sendArray[':parsedContent'] = htmlspecialchars($data->output['sidebarForm']->sendArray[':rawContent']);
+				$data->output['sidebarForm']->sendArray[':parsedContent'] = htmlentities($data->output['sidebarForm']->sendArray[':rawContent'],ENT_QUOTES,'UTF-8');
 			}
 			$data->output['sidebarForm']->sendArray[':sortOrder']=admin_sortOrder_new($data, $db, 'sidebars','sortOrder',NULL,NULL,TRUE);
 			// Save To DB
