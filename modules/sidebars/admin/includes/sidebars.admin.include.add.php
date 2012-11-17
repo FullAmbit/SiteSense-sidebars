@@ -97,7 +97,7 @@ function admin_sidebarsBuild($data, $db) {
 			}
 			//---Forms---//
 			$formQ = $db->prepare('createSidebarSetting', 'admin_dynamicForms');
-			$statement = $db->prepare('getAllFormIds', 'admin_dynamicForms');
+			$statement = $db->prepare('getAllForms', 'admin_dynamicForms');
 			$statement->execute();
 			$formList = $statement->fetchAll();
 			foreach ($formList as $formItem) {
